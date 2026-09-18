@@ -88,10 +88,10 @@ const projectData = {
       'ML model classifies live network traffic and flags malicious IPs',
       'Flagged IPs are blacklisted — all subsequent requests are blocked via XDP/eBPF',
       'Blocking happens at the kernel level before traffic reaches the application',
-      'Elasticsearch and Kibana dashboards for real-time traffic monitoring',
+      'Kibana dashboards for real-time traffic and blocking visibility',
       'Fully containerized with Docker Compose for single-command deployment'
     ],
-    tags: ['C', 'XDP/eBPF', 'Python', 'Machine Learning', 'Elasticsearch', 'Kibana', 'Docker', 'Redis'],
+    tags: ['C', 'XDP/eBPF', 'Python', 'Machine Learning', 'Kibana', 'Docker', 'Redis'],
     links: [
       { label: 'GitHub Repo', url: 'https://github.com/rexsez/ddos-defense' }
     ]
@@ -123,6 +123,21 @@ const projectData = {
     ],
     tags: ['Pega', 'Automation', 'CRM', 'Low-Code', 'Enterprise'],
     links: []
+  },
+  6: {
+    title: 'Calorie Fit',
+    desc: 'Fitness and nutrition calculator platform with a suite of tools — TDEE, BMR, BMI, macro, body-fat and water intake calculators — plus long-form training and nutrition content. Built as a fully static site for speed and SEO, internationalized into four languages, and served from nginx with proper cache headers, sitemap, hreflang, and structured metadata.',
+    highlights: [
+      'Six interactive calculators covering the core nutrition and body-composition workflow',
+      'Internationalized into English, Spanish, Portuguese and Arabic with per-locale routing and hreflang',
+      'Static-first architecture — sub-second loads and clean cache headers for HTML vs. assets',
+      'SEO groundwork: canonical URLs, Open Graph, sitemap.xml, structured data, alt-language links',
+      'Blog and training-guide content pipeline (Hyrox, body recomposition, supplementation)'
+    ],
+    tags: ['HTML/CSS/JS', 'Tailwind', 'SEO', 'i18n', 'Nginx', 'Static Site'],
+    links: [
+      { label: 'Live Site', url: 'https://calorie-fit.com/' }
+    ]
   }
 };
 
