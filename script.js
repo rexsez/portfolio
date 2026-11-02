@@ -1,5 +1,13 @@
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+// Contact address is assembled at runtime so it never appears in the raw HTML
+(function () {
+  const address = ['contact', 'hisham-alsaadawi.com'].join('@');
+  document.querySelectorAll('[data-mail]').forEach(a => {
+    a.href = 'mailto:' + address;
+  });
+})();
+
 // Mobile menu
 const toggle = document.getElementById('nav-toggle');
 const panel = document.getElementById('menu-panel');
