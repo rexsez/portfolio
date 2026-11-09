@@ -198,6 +198,18 @@ const projectData = {
       { label: 'GitHub repo', url: 'https://github.com/rexsez/Auto-GRC' }
     ]
   },
+  7: {
+    desc: 'A self-hosted automation setup on a Linux VPS. Command Center is a passkey-secured mobile web app that runs Claude Code tasks and sends push notifications for tasks and scheduled jobs. A Python sync turns course announcements and emails into to-dos with deadlines in Notion, and sends one daily digest.',
+    highlights: [
+      'Passkey-secured mobile web app for running tasks and receiving push notifications',
+      'Push notifications for tasks and scheduled jobs',
+      'Python sync that turns course announcements and emails into to-dos with deadlines in Notion',
+      'One daily digest instead of many separate messages',
+      'Scheduled jobs managed with systemd and cron, served behind nginx'
+    ],
+    tags: ['Node.js', 'Express', 'SQLite', 'Python', 'systemd', 'nginx'],
+    links: []
+  },
   6: {
     desc: 'Designed and developed a sales automation system on Pega to manage the full lifecycle of business opportunities. The platform centralizes contact management, ROI calculations, cost analysis, timelines and historical data, replacing fragmented spreadsheets with a unified workflow.',
     highlights: [
