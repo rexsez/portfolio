@@ -727,6 +727,10 @@ p, li { text-wrap: pretty; }
   object-position: left top;
 }
 
+.shot:has(+ .shot-note) {
+  top: var(--s-500);
+}
+
 .shot-phone {
   left: 50%;
   right: auto;
@@ -770,8 +774,8 @@ p, li { text-wrap: pretty; }
 
 .shot-note {
   position: absolute;
+  top: 6px;
   right: var(--s-100);
-  bottom: var(--s-100);
   padding: var(--s-25) var(--s-75);
   background: var(--surface-3);
   border: 1px solid var(--line);
