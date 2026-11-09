@@ -131,7 +131,7 @@ document.querySelectorAll('.proof-number').forEach(el => {
 // Project data
 const projectData = {
   1: {
-    desc: 'Developed a full payment and money transfer module on OutSystems for Infath, a government auctions platform under the Ministry of Justice. The system integrates with external banking APIs to handle real time transaction processing, automated invoice generation and payment reconciliation across multiple banking providers.',
+    desc: 'Developed a full payment and money transfer module on OutSystems for a government auctions platform. The system integrates with external banking APIs to handle real time transaction processing, automated invoice generation and payment reconciliation across multiple banking providers.',
     highlights: [
       'Integrated external banking APIs for real time transaction processing',
       'Built automated invoice generation and payment tracking workflows',
@@ -141,9 +141,7 @@ const projectData = {
     ],
     tags: ['OutSystems', 'REST APIs', 'Banking', 'Enterprise', 'Payment Processing'],
     note: 'Mostly backend work inside the client\'s system, so there are no screenshots to share. The image on the card is an illustration of the payment flow.',
-    links: [
-      { label: 'Infath platform', url: 'https://infath.gov.sa/en/home/' }
-    ]
+    links: []
   },
   2: {
     desc: 'Fitness and nutrition calculator platform with TDEE, BMR, BMI, macro, body fat and water intake calculators, plus long form training and nutrition content. Built as a fully static site for speed and SEO, available in four languages, and served from nginx with proper cache headers, sitemap, hreflang and structured metadata.',
