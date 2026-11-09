@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
   <script>document.documentElement.classList.add('js');</script>
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -86,32 +86,28 @@
             <p>I am a software engineer currently pursuing my M.Sc. in Computer Science (Cybersecurity) at the University of Passau, Germany. I hold a B.Sc. in Software Engineering (Cybersecurity) from Prince Sultan University with first class honours (GPA 3.81 out of 4.0).</p>
             <p>Over 2.5 years I built enterprise platforms on OutSystems and Pega. That work covered payment integrations, banking APIs, sales automation systems and cloud infrastructure on OCI. I combine hands on engineering with a growing security focus.</p>
           </div>
-          <div class="about-terminal reveal">
-            <div class="terminal">
-              <div class="terminal-header">
-                <span class="terminal-dot red"></span>
-                <span class="terminal-dot yellow"></span>
-                <span class="terminal-dot green"></span>
-                <span class="terminal-title">hisham@portfolio:~</span>
-              </div>
-              <div class="terminal-body">
-                <p><span class="prompt">$</span> cat about.json</p>
-                <pre>{
-  "name": "Hisham Alsaadawi",
-  "location": "Passau, Germany",
-  "education": "M.Sc. CS (Cybersecurity)",
-  "university": "University of Passau",
-  "interests": [
-    "Cloud Security",
-    "Application Security",
-    "System Integration",
-    "DevOps and CI/CD"
-  ],
-  "status": "Open to opportunities"
-}</pre>
-              </div>
+          <dl class="facts reveal">
+            <div class="fact">
+              <dt class="caption-3">Based in</dt>
+              <dd class="body-2">Passau, Germany</dd>
             </div>
-          </div>
+            <div class="fact">
+              <dt class="caption-3">Studying</dt>
+              <dd class="body-2">M.Sc. Computer Science (Cybersecurity), University of Passau</dd>
+            </div>
+            <div class="fact">
+              <dt class="caption-3">Experience</dt>
+              <dd class="body-2">2.5 years building enterprise platforms on OutSystems, Pega and OCI</dd>
+            </div>
+            <div class="fact">
+              <dt class="caption-3">Focus</dt>
+              <dd class="body-2">Cloud security, application security, system integration, DevOps</dd>
+            </div>
+            <div class="fact">
+              <dt class="caption-3">Availability</dt>
+              <dd class="body-2"><span class="status-dot" aria-hidden="true"></span>Open to opportunities</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
@@ -179,27 +175,13 @@
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow caption-3">Projects</span>
-          <h2 class="section-title heading-2">Selected work, from payments to kernel level defense</h2>
+          <h2 class="section-title heading-2">Projects</h2>
         </div>
         <div class="projects-grid">
 
           <div class="project-wrapper reveal" data-project="1">
             <article class="project-card" role="button" tabindex="0" aria-expanded="false">
-              <div class="project-image"><svg class="project-svg" role="img" aria-label="Diagram for project 1" preserveAspectRatio="xMidYMid meet" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                <rect x="40" y="30" width="120" height="80" rx="6" fill="none" stroke="rgba(0,212,170,0.3)" stroke-width="1.5"/>
-                <rect x="240" y="30" width="120" height="80" rx="6" fill="none" stroke="rgba(0,212,170,0.3)" stroke-width="1.5"/>
-                <line x1="160" y1="70" x2="240" y2="70" stroke="rgba(0,212,170,0.5)" stroke-width="1.5" stroke-dasharray="6 4"/>
-                <circle cx="200" cy="70" r="12" fill="rgba(0,212,170,0.15)" stroke="rgba(0,212,170,0.4)" stroke-width="1.5"/>
-                <text x="200" y="74" text-anchor="middle" fill="rgba(0,212,170,0.6)" font-size="10" font-family="Geist Mono, monospace">$</text>
-                <rect x="60" y="50" width="40" height="4" rx="2" fill="rgba(0,212,170,0.2)"/>
-                <rect x="60" y="60" width="60" height="4" rx="2" fill="rgba(0,212,170,0.15)"/>
-                <rect x="60" y="70" width="30" height="4" rx="2" fill="rgba(0,212,170,0.1)"/>
-                <rect x="260" y="50" width="50" height="4" rx="2" fill="rgba(0,212,170,0.2)"/>
-                <rect x="260" y="60" width="70" height="4" rx="2" fill="rgba(0,212,170,0.15)"/>
-                <rect x="260" y="70" width="40" height="4" rx="2" fill="rgba(0,212,170,0.1)"/>
-                <text x="100" y="150" text-anchor="middle" fill="rgba(0,212,170,0.12)" font-size="32" font-weight="600" font-family="Geist Mono, monospace">API</text>
-                <text x="300" y="150" text-anchor="middle" fill="rgba(0,212,170,0.12)" font-size="32" font-weight="600" font-family="Geist Mono, monospace">BANK</text>
-              </svg></div>
+              <div class="project-image"><div class="shot"><svg class="ill" role="img" aria-label="Illustration of a payment moving from bidder to bank to invoice" viewBox="0 0 300 210" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg"><text class="ill-title" x="20" y="32">Payment request</text><rect class="ill-chip" x="194" y="18" width="64" height="20" rx="10"/><text class="ill-chip-text" x="226.0" y="32" text-anchor="middle">Settled</text><text class="ill-muted" x="20" y="51">Auction deposit by bank transfer</text><line class="ill-rule" x1="0" y1="66" x2="1000" y2="66"/><circle class="ill-dot" cx="28" cy="90" r="7"/><path class="ill-check" d="M25 90 l2 2 l4 -4.5"/><text class="ill-text" x="46" y="94">Bidder submits payment</text><text class="ill-muted" x="262" y="94" text-anchor="end">10:02</text><line class="ill-track" x1="28" y1="98" x2="28" y2="112"/><circle class="ill-dot" cx="28" cy="120" r="7"/><path class="ill-check" d="M25 120 l2 2 l4 -4.5"/><text class="ill-text" x="46" y="124">Sent to bank API</text><text class="ill-muted" x="262" y="124" text-anchor="end">10:02</text><line class="ill-track" x1="28" y1="128" x2="28" y2="142"/><circle class="ill-dot" cx="28" cy="150" r="7"/><path class="ill-check" d="M25 150 l2 2 l4 -4.5"/><text class="ill-text" x="46" y="154">Bank confirms transfer</text><text class="ill-muted" x="262" y="154" text-anchor="end">10:04</text><line class="ill-track" x1="28" y1="158" x2="28" y2="172"/><circle class="ill-dot" cx="28" cy="180" r="7"/><path class="ill-check" d="M25 180 l2 2 l4 -4.5"/><text class="ill-text" x="46" y="184">Invoice generated</text><text class="ill-muted" x="262" y="184" text-anchor="end">10:04</text></svg></div><span class="shot-note caption-4">Illustration</span></div>
               <div class="project-info">
                 <span class="project-toggle" aria-hidden="true"><i class="ph ph-plus"></i></span>
                 <h3 class="heading-6">Payment and banking integration</h3>
@@ -212,26 +194,7 @@
 
           <div class="project-wrapper reveal" data-project="2">
             <article class="project-card" role="button" tabindex="0" aria-expanded="false">
-              <div class="project-image"><svg class="project-svg" role="img" aria-label="Diagram for project 2" preserveAspectRatio="xMidYMid meet" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                <rect x="130" y="30" width="140" height="70" rx="8" fill="rgba(0,212,170,0.06)" stroke="rgba(0,212,170,0.35)" stroke-width="1.5"/>
-                <text x="200" y="55" text-anchor="middle" fill="rgba(0,212,170,0.4)" font-size="9" font-family="Geist Mono, monospace">TDEE</text>
-                <text x="200" y="82" text-anchor="middle" fill="rgba(0,212,170,0.7)" font-size="20" font-weight="700" font-family="Geist Mono, monospace">2,340</text>
-                <text x="200" y="95" text-anchor="middle" fill="rgba(0,212,170,0.3)" font-size="7" font-family="Geist Mono, monospace">kcal / day</text>
-                <rect x="30" y="120" width="66" height="24" rx="4" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1"/>
-                <text x="63" y="136" text-anchor="middle" fill="rgba(0,212,170,0.4)" font-size="9" font-family="Geist Mono, monospace">BMR</text>
-                <rect x="106" y="120" width="66" height="24" rx="4" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1"/>
-                <text x="139" y="136" text-anchor="middle" fill="rgba(0,212,170,0.4)" font-size="9" font-family="Geist Mono, monospace">BMI</text>
-                <rect x="182" y="120" width="66" height="24" rx="4" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1"/>
-                <text x="215" y="136" text-anchor="middle" fill="rgba(0,212,170,0.4)" font-size="9" font-family="Geist Mono, monospace">Macros</text>
-                <rect x="258" y="120" width="66" height="24" rx="4" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1"/>
-                <text x="291" y="136" text-anchor="middle" fill="rgba(0,212,170,0.4)" font-size="9" font-family="Geist Mono, monospace">Body Fat</text>
-                <rect x="298" y="20" width="80" height="18" rx="4" fill="none" stroke="rgba(0,212,170,0.15)" stroke-width="1"/>
-                <text x="313" y="32" fill="rgba(0,212,170,0.4)" font-size="8" font-family="Geist Mono, monospace">EN</text>
-                <text x="331" y="32" fill="rgba(0,212,170,0.35)" font-size="8" font-family="Geist Mono, monospace">ES</text>
-                <text x="349" y="32" fill="rgba(0,212,170,0.3)" font-size="8" font-family="Geist Mono, monospace">PT</text>
-                <text x="367" y="32" fill="rgba(0,212,170,0.25)" font-size="8" font-family="Geist Mono, monospace">AR</text>
-                <text x="200" y="185" text-anchor="middle" fill="rgba(0,212,170,0.08)" font-size="24" font-weight="600" font-family="Geist Mono, monospace">CALORIE FIT</text>
-              </svg></div>
+              <div class="project-image"><div class="shot"><img src="images/projects/calorie-fit-card.webp" width="740" height="642" alt="Calorie Fit home page with the headline Calculate Your Daily Calorie Needs" loading="lazy" decoding="async"></div></div>
               <div class="project-info">
                 <span class="project-toggle" aria-hidden="true"><i class="ph ph-plus"></i></span>
                 <h3 class="heading-6">Calorie Fit</h3>
@@ -244,23 +207,7 @@
 
           <div class="project-wrapper reveal" data-project="3">
             <article class="project-card" role="button" tabindex="0" aria-expanded="false">
-              <div class="project-image"><svg class="project-svg" role="img" aria-label="Diagram for project 3" preserveAspectRatio="xMidYMid meet" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                <rect x="50" y="40" width="80" height="55" rx="6" fill="rgba(0,212,170,0.06)" stroke="rgba(0,212,170,0.25)" stroke-width="1.5"/>
-                <text x="90" y="72" text-anchor="middle" fill="rgba(0,212,170,0.4)" font-size="10" font-family="Geist Mono, monospace">Docker</text>
-                <path d="M135 67 L175 67" stroke="rgba(0,212,170,0.4)" stroke-width="1.5" marker-end="url(#arr2)"/>
-                <defs><marker id="arr2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="rgba(0,212,170,0.4)"/></marker></defs>
-                <ellipse cx="270" cy="67" rx="90" ry="45" fill="none" stroke="rgba(0,212,170,0.2)" stroke-width="1" stroke-dasharray="4 3"/>
-                <rect x="210" y="45" width="40" height="30" rx="4" fill="rgba(0,212,170,0.1)" stroke="rgba(0,212,170,0.3)" stroke-width="1"/>
-                <rect x="260" y="45" width="40" height="30" rx="4" fill="rgba(0,212,170,0.1)" stroke="rgba(0,212,170,0.3)" stroke-width="1"/>
-                <rect x="310" y="45" width="40" height="30" rx="4" fill="rgba(0,212,170,0.1)" stroke="rgba(0,212,170,0.3)" stroke-width="1"/>
-                <rect x="235" y="85" width="65" height="20" rx="3" fill="rgba(0,212,170,0.06)" stroke="rgba(0,212,170,0.15)" stroke-width="1"/>
-                <text x="268" y="99" text-anchor="middle" fill="rgba(0,212,170,0.3)" font-size="7" font-family="Geist Mono, monospace">OKE Cluster</text>
-                <circle cx="90" cy="140" r="12" fill="none" stroke="rgba(0,212,170,0.15)" stroke-width="1"/>
-                <text x="90" y="144" text-anchor="middle" fill="rgba(0,212,170,0.2)" font-size="7" font-family="Geist Mono, monospace">DB</text>
-                <circle cx="160" cy="140" r="12" fill="none" stroke="rgba(0,212,170,0.15)" stroke-width="1"/>
-                <text x="160" y="144" text-anchor="middle" fill="rgba(0,212,170,0.2)" font-size="7" font-family="Geist Mono, monospace">VPN</text>
-                <text x="200" y="185" text-anchor="middle" fill="rgba(0,212,170,0.08)" font-size="24" font-weight="600" font-family="Geist Mono, monospace">OCI</text>
-              </svg></div>
+              <div class="project-image"><div class="shot"><svg class="ill" role="img" aria-label="Illustration of an OKE Kubernetes cluster with node pools and a rolling update" viewBox="0 0 300 210" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg"><text class="ill-title" x="20" y="32">OKE cluster</text><rect class="ill-chip" x="182" y="18" width="76" height="20" rx="10"/><text class="ill-chip-text" x="220.0" y="32" text-anchor="middle">Production</text><text class="ill-muted" x="20" y="51">Pega platform, moved off a single Docker host</text><line class="ill-rule" x1="0" y1="66" x2="1000" y2="66"/><text class="ill-muted" x="20" y="92">Node pool A</text><rect class="ill-pod" x="112" y="81" width="14" height="14" rx="3"/><rect class="ill-pod" x="134" y="81" width="14" height="14" rx="3"/><rect class="ill-pod" x="156" y="81" width="14" height="14" rx="3"/><rect class="ill-pod" x="178" y="81" width="14" height="14" rx="3"/><rect class="ill-pod" x="200" y="81" width="14" height="14" rx="3"/><rect class="ill-pod" x="222" y="81" width="14" height="14" rx="3"/><text class="ill-muted" x="20" y="120">Node pool B</text><rect class="ill-pod" x="112" y="109" width="14" height="14" rx="3"/><rect class="ill-pod" x="134" y="109" width="14" height="14" rx="3"/><rect class="ill-pod" x="156" y="109" width="14" height="14" rx="3"/><rect class="ill-pod" x="178" y="109" width="14" height="14" rx="3"/><rect class="ill-pod" x="200" y="109" width="14" height="14" rx="3"/><rect class="ill-pod" x="222" y="109" width="14" height="14" rx="3"/><text class="ill-muted" x="20" y="148">Node pool C</text><rect class="ill-pod" x="112" y="137" width="14" height="14" rx="3"/><rect class="ill-pod" x="134" y="137" width="14" height="14" rx="3"/><rect class="ill-pod" x="156" y="137" width="14" height="14" rx="3"/><rect class="ill-pod" x="178" y="137" width="14" height="14" rx="3"/><rect class="ill-pod-off" x="200" y="137" width="14" height="14" rx="3"/><rect class="ill-pod-off" x="222" y="137" width="14" height="14" rx="3"/><text class="ill-text" x="20" y="182">Rolling update</text><rect class="ill-bar" x="112" y="175" width="124" height="6" rx="3"/><rect class="ill-bar-on" x="112" y="175" width="103" height="6" rx="3"/><text class="ill-muted" x="262" y="182" text-anchor="end">16 of 18</text></svg></div><span class="shot-note caption-4">Illustration</span></div>
               <div class="project-info">
                 <span class="project-toggle" aria-hidden="true"><i class="ph ph-plus"></i></span>
                 <h3 class="heading-6">Pega production environment</h3>
@@ -273,21 +220,7 @@
 
           <div class="project-wrapper reveal" data-project="4">
             <article class="project-card" role="button" tabindex="0" aria-expanded="false">
-              <div class="project-image"><svg class="project-svg" role="img" aria-label="Diagram for project 4" preserveAspectRatio="xMidYMid meet" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                <rect x="150" y="20" width="100" height="40" rx="6" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.35)" stroke-width="1.5"/>
-                <text x="200" y="45" text-anchor="middle" fill="rgba(0,212,170,0.5)" font-size="10" font-family="Geist Mono, monospace">XDP/eBPF</text>
-                <path d="M60 100 L140 100" stroke="rgba(255,80,80,0.3)" stroke-width="2" stroke-dasharray="5 3"/>
-                <path d="M60 110 L140 110" stroke="rgba(255,80,80,0.2)" stroke-width="2" stroke-dasharray="5 3"/>
-                <path d="M60 120 L140 120" stroke="rgba(255,80,80,0.15)" stroke-width="2" stroke-dasharray="5 3"/>
-                <text x="40" y="115" text-anchor="middle" fill="rgba(255,80,80,0.25)" font-size="9" font-family="Geist Mono, monospace">DDoS</text>
-                <rect x="145" y="85" width="50" height="50" rx="6" fill="rgba(0,212,170,0.06)" stroke="rgba(0,212,170,0.3)" stroke-width="1.5"/>
-                <text x="170" y="114" text-anchor="middle" fill="rgba(0,212,170,0.4)" font-size="9" font-family="Geist Mono, monospace">ML</text>
-                <line x1="195" y1="110" x2="240" y2="110" stroke="rgba(0,212,170,0.3)" stroke-width="1.5"/>
-                <line x1="170" y1="85" x2="185" y2="60" stroke="rgba(0,212,170,0.2)" stroke-width="1" stroke-dasharray="3 3"/>
-                <rect x="245" y="90" width="60" height="40" rx="4" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1"/>
-                <text x="275" y="114" text-anchor="middle" fill="rgba(0,212,170,0.35)" font-size="8" font-family="Geist Mono, monospace">Kibana</text>
-                <text x="200" y="185" text-anchor="middle" fill="rgba(0,212,170,0.08)" font-size="24" font-weight="600" font-family="Geist Mono, monospace">DEFENSE</text>
-              </svg></div>
+              <div class="project-image"><div class="shot"><img src="images/projects/ddos-card.webp" width="640" height="430" alt="Kibana chart of network traffic classified by the ML model over time" loading="lazy" decoding="async"></div></div>
               <div class="project-info">
                 <span class="project-toggle" aria-hidden="true"><i class="ph ph-plus"></i></span>
                 <h3 class="heading-6">DDoS defense system</h3>
@@ -300,26 +233,7 @@
 
           <div class="project-wrapper reveal" data-project="5">
             <article class="project-card" role="button" tabindex="0" aria-expanded="false">
-              <div class="project-image"><svg class="project-svg" role="img" aria-label="Diagram for project 5" preserveAspectRatio="xMidYMid meet" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                <rect x="160" y="30" width="80" height="50" rx="6" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.35)" stroke-width="1.5"/>
-                <text x="200" y="60" text-anchor="middle" fill="rgba(0,212,170,0.5)" font-size="11" font-family="Geist Mono, monospace">OPA</text>
-                <rect x="40" y="120" width="70" height="36" rx="4" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1"/>
-                <text x="75" y="142" text-anchor="middle" fill="rgba(0,212,170,0.35)" font-size="8" font-family="Geist Mono, monospace">K8s</text>
-                <rect x="125" y="120" width="70" height="36" rx="4" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1"/>
-                <text x="160" y="142" text-anchor="middle" fill="rgba(0,212,170,0.35)" font-size="8" font-family="Geist Mono, monospace">Docker</text>
-                <rect x="210" y="120" width="70" height="36" rx="4" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1"/>
-                <text x="245" y="142" text-anchor="middle" fill="rgba(0,212,170,0.35)" font-size="8" font-family="Geist Mono, monospace">Terraform</text>
-                <rect x="295" y="120" width="70" height="36" rx="4" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1"/>
-                <text x="330" y="142" text-anchor="middle" fill="rgba(0,212,170,0.35)" font-size="8" font-family="Geist Mono, monospace">IAM</text>
-                <line x1="75" y1="120" x2="180" y2="80" stroke="rgba(0,212,170,0.15)" stroke-width="1" stroke-dasharray="3 3"/>
-                <line x1="160" y1="120" x2="195" y2="80" stroke="rgba(0,212,170,0.15)" stroke-width="1" stroke-dasharray="3 3"/>
-                <line x1="245" y1="120" x2="210" y2="80" stroke="rgba(0,212,170,0.15)" stroke-width="1" stroke-dasharray="3 3"/>
-                <line x1="330" y1="120" x2="225" y2="80" stroke="rgba(0,212,170,0.15)" stroke-width="1" stroke-dasharray="3 3"/>
-                <circle cx="340" cy="45" r="14" fill="none" stroke="rgba(0,212,170,0.2)" stroke-width="1"/>
-                <text x="340" y="49" text-anchor="middle" fill="rgba(0,212,170,0.3)" font-size="7" font-family="Geist Mono, monospace">AI</text>
-                <line x1="240" y1="50" x2="326" y2="45" stroke="rgba(0,212,170,0.12)" stroke-width="1" stroke-dasharray="3 3"/>
-                <text x="200" y="190" text-anchor="middle" fill="rgba(0,212,170,0.08)" font-size="28" font-weight="600" font-family="Geist Mono, monospace">GRC</text>
-              </svg></div>
+              <div class="project-image"><div class="shot"><img src="images/projects/auto-grc-card.webp" width="740" height="461" alt="Auto-GRC finding: a critical public storage violation with its fix and CIS, NIST and ISO references" loading="lazy" decoding="async"></div></div>
               <div class="project-info">
                 <span class="project-toggle" aria-hidden="true"><i class="ph ph-plus"></i></span>
                 <h3 class="heading-6">Auto-GRC</h3>
@@ -332,33 +246,7 @@
 
           <div class="project-wrapper reveal" data-project="7">
             <article class="project-card" role="button" tabindex="0" aria-expanded="false">
-              <div class="project-image"><svg class="project-svg" role="img" aria-label="Phone with a stack of push notifications" preserveAspectRatio="xMidYMid meet" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                <rect x="150" y="12" width="100" height="176" rx="14" fill="none" stroke="rgba(0,212,170,0.3)" stroke-width="1.5"/>
-                <rect x="187" y="19" width="26" height="4" rx="2" fill="rgba(0,212,170,0.2)"/>
-                <rect x="162" y="38" width="76" height="30" rx="5" fill="rgba(0,212,170,0.1)" stroke="rgba(0,212,170,0.35)" stroke-width="1"/>
-                <circle cx="173" cy="53" r="4" fill="rgba(0,212,170,0.4)"/>
-                <rect x="182" y="47" width="40" height="5" rx="2" fill="rgba(0,212,170,0.25)"/>
-                <rect x="182" y="57" width="28" height="4" rx="2" fill="rgba(0,212,170,0.12)"/>
-                <rect x="162" y="76" width="76" height="30" rx="5" fill="rgba(0,212,170,0.06)" stroke="rgba(0,212,170,0.22)" stroke-width="1"/>
-                <circle cx="173" cy="91" r="4" fill="rgba(0,212,170,0.25)"/>
-                <rect x="182" y="85" width="34" height="5" rx="2" fill="rgba(0,212,170,0.18)"/>
-                <rect x="182" y="95" width="44" height="4" rx="2" fill="rgba(0,212,170,0.1)"/>
-                <rect x="162" y="114" width="76" height="30" rx="5" fill="rgba(0,212,170,0.03)" stroke="rgba(0,212,170,0.14)" stroke-width="1"/>
-                <circle cx="173" cy="129" r="4" fill="rgba(0,212,170,0.15)"/>
-                <rect x="182" y="123" width="42" height="5" rx="2" fill="rgba(0,212,170,0.12)"/>
-                <rect x="182" y="133" width="24" height="4" rx="2" fill="rgba(0,212,170,0.07)"/>
-                <rect x="30" y="40" width="84" height="32" rx="5" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1"/>
-                <text x="72" y="60" text-anchor="middle" fill="rgba(0,212,170,0.4)" font-size="8" font-family="Geist Mono, monospace">systemd</text>
-                <rect x="30" y="112" width="84" height="32" rx="5" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1"/>
-                <text x="72" y="132" text-anchor="middle" fill="rgba(0,212,170,0.4)" font-size="8" font-family="Geist Mono, monospace">Python sync</text>
-                <rect x="286" y="76" width="84" height="32" rx="5" fill="rgba(0,212,170,0.06)" stroke="rgba(0,212,170,0.3)" stroke-width="1"/>
-                <text x="328" y="96" text-anchor="middle" fill="rgba(0,212,170,0.45)" font-size="8" font-family="Geist Mono, monospace">Notion to-dos</text>
-                <line x1="114" y1="56" x2="150" y2="56" stroke="rgba(0,212,170,0.2)" stroke-width="1" stroke-dasharray="3 3"/>
-                <line x1="114" y1="128" x2="150" y2="128" stroke="rgba(0,212,170,0.2)" stroke-width="1" stroke-dasharray="3 3"/>
-                <line x1="72" y1="112" x2="72" y2="72" stroke="rgba(0,212,170,0.15)" stroke-width="1" stroke-dasharray="3 3"/>
-                <line x1="238" y1="91" x2="286" y2="91" stroke="rgba(0,212,170,0.2)" stroke-width="1" stroke-dasharray="3 3"/>
-                <text x="200" y="198" text-anchor="middle" fill="rgba(0,212,170,0.08)" font-size="10" font-weight="600" font-family="Geist Mono, monospace">AUTOMATION</text>
-              </svg></div>
+              <div class="project-image"><div class="shot shot-phone"><img src="images/projects/automation-card.webp" width="420" height="528" alt="Phone showing a list of task, job and to-do notifications" loading="lazy" decoding="async"></div></div>
               <div class="project-info">
                 <span class="project-toggle" aria-hidden="true"><i class="ph ph-plus"></i></span>
                 <h3 class="heading-6">Personal Automation Server</h3>
@@ -371,23 +259,7 @@
 
           <div class="project-wrapper reveal" data-project="6">
             <article class="project-card" role="button" tabindex="0" aria-expanded="false">
-              <div class="project-image"><svg class="project-svg" role="img" aria-label="Diagram for project 6" preserveAspectRatio="xMidYMid meet" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                <rect x="30" y="25" width="340" height="150" rx="6" fill="none" stroke="rgba(0,212,170,0.2)" stroke-width="1"/>
-                <rect x="30" y="25" width="340" height="28" rx="6" fill="rgba(0,212,170,0.06)"/>
-                <circle cx="48" cy="39" r="4" fill="rgba(0,212,170,0.3)"/>
-                <circle cx="62" cy="39" r="4" fill="rgba(0,212,170,0.2)"/>
-                <circle cx="76" cy="39" r="4" fill="rgba(0,212,170,0.15)"/>
-                <rect x="50" y="65" width="80" height="10" rx="3" fill="rgba(0,212,170,0.15)"/>
-                <rect x="50" y="85" width="120" height="6" rx="2" fill="rgba(0,212,170,0.08)"/>
-                <rect x="50" y="97" width="100" height="6" rx="2" fill="rgba(0,212,170,0.06)"/>
-                <rect x="50" y="115" width="60" height="20" rx="4" fill="rgba(0,212,170,0.12)" stroke="rgba(0,212,170,0.25)" stroke-width="1"/>
-                <rect x="120" y="115" width="60" height="20" rx="4" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.15)" stroke-width="1"/>
-                <rect x="220" y="65" width="130" height="80" rx="4" fill="rgba(0,212,170,0.04)" stroke="rgba(0,212,170,0.15)" stroke-width="1"/>
-                <rect x="235" y="80" width="45" height="8" rx="2" fill="rgba(0,212,170,0.2)"/>
-                <rect x="235" y="95" width="100" height="4" rx="2" fill="rgba(0,212,170,0.1)"/>
-                <rect x="235" y="105" width="80" height="4" rx="2" fill="rgba(0,212,170,0.08)"/>
-                <rect x="235" y="120" width="50" height="12" rx="3" fill="rgba(0,212,170,0.15)"/>
-              </svg></div>
+              <div class="project-image"><div class="shot"><svg class="ill" role="img" aria-label="Illustration of a sales pipeline board with lead, qualified, proposal and won columns" viewBox="0 0 300 210" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg"><text class="ill-title" x="20" y="32">Opportunities</text><rect class="ill-chip" x="178" y="18" width="80" height="20" rx="10"/><text class="ill-chip-text" x="218.0" y="32" text-anchor="middle">This quarter</text><text class="ill-muted" x="20" y="51">Contacts, costs and ROI from lead to close</text><line class="ill-rule" x1="0" y1="66" x2="1000" y2="66"/><text class="ill-muted" x="20" y="90">Lead</text><rect class="ill-box" x="20" y="100" width="58" height="34" rx="5"/><rect class="ill-skel" x="27" y="109" width="34" height="5" rx="2.5"/><rect class="ill-skel" x="27" y="120" width="44" height="4" rx="2"/><rect class="ill-box" x="20" y="142" width="58" height="34" rx="5"/><rect class="ill-skel" x="27" y="151" width="34" height="5" rx="2.5"/><rect class="ill-skel" x="27" y="162" width="26" height="4" rx="2"/><rect class="ill-box" x="20" y="184" width="58" height="34" rx="5"/><rect class="ill-skel" x="27" y="193" width="34" height="5" rx="2.5"/><rect class="ill-skel" x="27" y="204" width="44" height="4" rx="2"/><text class="ill-muted" x="86" y="90">Qualified</text><rect class="ill-box" x="86" y="100" width="58" height="34" rx="5"/><rect class="ill-skel" x="93" y="109" width="34" height="5" rx="2.5"/><rect class="ill-skel" x="93" y="120" width="44" height="4" rx="2"/><rect class="ill-box" x="86" y="142" width="58" height="34" rx="5"/><rect class="ill-skel" x="93" y="151" width="34" height="5" rx="2.5"/><rect class="ill-skel" x="93" y="162" width="26" height="4" rx="2"/><rect class="ill-box" x="86" y="184" width="58" height="34" rx="5"/><rect class="ill-skel" x="93" y="193" width="34" height="5" rx="2.5"/><rect class="ill-skel" x="93" y="204" width="44" height="4" rx="2"/><text class="ill-muted" x="152" y="90">Proposal</text><rect class="ill-box" x="152" y="100" width="58" height="34" rx="5"/><rect class="ill-skel" x="159" y="109" width="34" height="5" rx="2.5"/><rect class="ill-skel" x="159" y="120" width="44" height="4" rx="2"/><rect class="ill-box" x="152" y="142" width="58" height="34" rx="5"/><rect class="ill-skel" x="159" y="151" width="34" height="5" rx="2.5"/><rect class="ill-skel" x="159" y="162" width="26" height="4" rx="2"/><text class="ill-muted" x="218" y="90">Won</text><rect class="ill-box-on" x="218" y="100" width="58" height="34" rx="5"/><rect class="ill-skel-on" x="225" y="109" width="34" height="5" rx="2.5"/><rect class="ill-skel" x="225" y="120" width="44" height="4" rx="2"/></svg></div><span class="shot-note caption-4">Illustration</span></div>
               <div class="project-info">
                 <span class="project-toggle" aria-hidden="true"><i class="ph ph-plus"></i></span>
                 <h3 class="heading-6">Sales automation system</h3>
@@ -525,6 +397,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>

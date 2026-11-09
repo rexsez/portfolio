@@ -140,6 +140,7 @@ const projectData = {
       'Designed for high availability with transaction rollback support'
     ],
     tags: ['OutSystems', 'REST APIs', 'Banking', 'Enterprise', 'Payment Processing'],
+    note: 'Mostly backend work inside the client\'s system, so there are no screenshots to share. The image on the card is an illustration of the payment flow.',
     links: [
       { label: 'Infath platform', url: 'https://infath.gov.sa/en/home/' }
     ]
@@ -154,6 +155,10 @@ const projectData = {
       'Blog and training guide content pipeline covering Hyrox, body recomposition and supplementation'
     ],
     tags: ['HTML/CSS/JS', 'Tailwind', 'SEO', 'i18n', 'Nginx', 'Static Site'],
+    shots: [
+      { src: 'images/projects/calorie-fit-desktop.webp', w: 1600, h: 1350, alt: 'Calorie Fit calorie calculator with BMR, maintenance and goal results', caption: 'Calorie calculator with results, desktop' },
+      { src: 'images/projects/calorie-fit-phone.webp', w: 600, h: 1298, alt: 'Calorie Fit home page on a phone', caption: 'Home page on a phone', phone: true }
+    ],
     links: [
       { label: 'Live site', url: 'https://calorie-fit.com/' }
     ]
@@ -168,6 +173,7 @@ const projectData = {
       'Enabled rolling updates and rollback for zero downtime releases'
     ],
     tags: ['Kubernetes', 'OCI', 'Docker', 'Pega', 'OKE'],
+    note: 'Internal employer infrastructure, so screenshots can\'t be shared. The image on the card is an illustration of the setup.',
     links: []
   },
   4: {
@@ -180,6 +186,9 @@ const projectData = {
       'Fully containerized with Docker Compose for single command deployment'
     ],
     tags: ['C', 'XDP/eBPF', 'Python', 'Machine Learning', 'Kibana', 'Docker', 'Redis'],
+    shots: [
+      { src: 'images/projects/ddos-dashboard.webp', w: 1400, h: 486, alt: 'Kibana dashboard with classified traffic, an ML traffic chart and tables of XDP blocks and drops', caption: 'Kibana dashboard: classified traffic, ML traffic analysis, XDP blocks and drops' }
+    ],
     links: [
       { label: 'GitHub repo', url: 'https://github.com/rexsez/ddos-defense' }
     ]
@@ -194,6 +203,9 @@ const projectData = {
       'Full audit trail with validation history and dashboard analytics'
     ],
     tags: ['Python', 'FastAPI', 'Next.js', 'OPA', 'PostgreSQL', 'Docker', 'AI', 'Rego'],
+    shots: [
+      { src: 'images/projects/auto-grc-history.webp', w: 1600, h: 1000, alt: 'Auto-GRC validation history with a failed Terraform run showing critical, high and low violations, fixes and compliance references', caption: 'Validation history: each violation comes with a fix and its CIS, NIST and ISO references' }
+    ],
     links: [
       { label: 'GitHub repo', url: 'https://github.com/rexsez/Auto-GRC' }
     ]
@@ -208,6 +220,10 @@ const projectData = {
       'Scheduled jobs managed with systemd and cron, served behind nginx'
     ],
     tags: ['Node.js', 'Express', 'SQLite', 'Python', 'systemd', 'nginx'],
+    shots: [
+      { src: 'images/projects/automation-notifications.webp', w: 600, h: 1298, alt: 'Notification list with daily digest, new to-do, finished task and job results', caption: 'Notifications by project and source', phone: true },
+      { src: 'images/projects/automation-digest.webp', w: 600, h: 1298, alt: 'Daily digest listing three to-dos due this week', caption: 'Daily digest of upcoming deadlines', phone: true }
+    ],
     links: []
   },
   6: {
@@ -220,6 +236,7 @@ const projectData = {
       'Created role based dashboards for sales teams and management'
     ],
     tags: ['Pega', 'Automation', 'CRM', 'Low Code', 'Enterprise'],
+    note: 'Internal employer system, so screenshots can\'t be shared. The image on the card is an illustration of the pipeline.',
     links: []
   }
 };
@@ -262,9 +279,21 @@ function toggleDetail(wrapper) {
       ).join('') + '</div>'
     : '';
 
+  const shotsHtml = data.shots && data.shots.length
+    ? '<div class="project-detail-section"><h4 class="title-4">Screenshots</h4><div class="shot-gallery">' +
+      data.shots.map(shot =>
+        '<figure' + (shot.phone ? ' class="phone"' : '') + '>' +
+        '<a href="' + shot.src + '" target="_blank" rel="noopener">' +
+        '<img src="' + shot.src + '" width="' + shot.w + '" height="' + shot.h + '" alt="' + shot.alt + '" loading="lazy" decoding="async"></a>' +
+        '<figcaption class="body-5">' + shot.caption + '</figcaption></figure>'
+      ).join('') + '</div></div>'
+    : '';
+
   wrapper.querySelector('.project-detail').innerHTML =
     '<div class="project-detail-content">' +
     '<p class="project-detail-desc body-3">' + data.desc + '</p>' +
+    (data.note ? '<p class="project-note body-5"><i class="ph ph-info" aria-hidden="true"></i>' + data.note + '</p>' : '') +
+    shotsHtml +
     '<div class="project-detail-section"><h4 class="title-4">Key highlights</h4>' +
     '<ul class="dot-list body-5">' + data.highlights.map(h => '<li>' + h + '</li>').join('') + '</ul></div>' +
     '<div class="project-detail-section"><h4 class="title-4">Technologies</h4>' +
