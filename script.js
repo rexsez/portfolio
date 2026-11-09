@@ -131,7 +131,7 @@ document.querySelectorAll('.proof-number').forEach(el => {
 // Project data
 const projectData = {
   1: {
-    desc: 'Developed a full payment and money transfer module on OutSystems for Infath, a government auctions platform under the Saudi Ministry of Justice. The system integrates with external banking APIs to handle real time transaction processing, automated invoice generation and payment reconciliation across multiple banking providers.',
+    desc: 'Developed a full payment and money transfer module on OutSystems for Infath, a government auctions platform under the Ministry of Justice. The system integrates with external banking APIs to handle real time transaction processing, automated invoice generation and payment reconciliation across multiple banking providers.',
     highlights: [
       'Integrated external banking APIs for real time transaction processing',
       'Built automated invoice generation and payment tracking workflows',
