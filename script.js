@@ -185,7 +185,7 @@ const projectData = {
     ],
     tags: ['C', 'XDP/eBPF', 'Python', 'Machine Learning', 'Kibana', 'Docker', 'Redis'],
     shots: [
-      { src: 'images/projects/ddos-dashboard.webp', w: 1400, h: 486, alt: 'Kibana dashboard with classified traffic, an ML traffic chart and tables of XDP blocks and drops', caption: 'Kibana dashboard: classified traffic, ML traffic analysis, XDP blocks and drops' }
+      { src: 'images/projects/ddos-dashboard.webp', lightUi: true, w: 1400, h: 486, alt: 'Kibana dashboard with classified traffic, an ML traffic chart and tables of XDP blocks and drops', caption: 'Kibana dashboard: classified traffic, ML traffic analysis, XDP blocks and drops' }
     ],
     links: [
       { label: 'GitHub repo', url: 'https://github.com/rexsez/ddos-defense' }
@@ -202,7 +202,7 @@ const projectData = {
     ],
     tags: ['Python', 'FastAPI', 'Next.js', 'OPA', 'PostgreSQL', 'Docker', 'AI', 'Rego'],
     shots: [
-      { src: 'images/projects/auto-grc-history.webp', w: 1600, h: 1000, alt: 'Auto-GRC validation history with a failed Terraform run showing critical, high and low violations, fixes and compliance references', caption: 'Validation history: each violation comes with a fix and its CIS, NIST and ISO references' }
+      { src: 'images/projects/auto-grc-history.webp', lightUi: true, w: 1600, h: 1000, alt: 'Auto-GRC validation history with a failed Terraform run showing critical, high and low violations, fixes and compliance references', caption: 'Validation history: each violation comes with a fix and its CIS, NIST and ISO references' }
     ],
     links: [
       { label: 'GitHub repo', url: 'https://github.com/rexsez/Auto-GRC' }
@@ -219,8 +219,8 @@ const projectData = {
     ],
     tags: ['Node.js', 'Express', 'SQLite', 'Python', 'systemd', 'nginx'],
     shots: [
-      { src: 'images/projects/automation-notifications.webp', w: 600, h: 1298, alt: 'Notification list with daily digest, new to-do, finished task and job results', caption: 'Notifications by project and source', phone: true },
-      { src: 'images/projects/automation-digest.webp', w: 600, h: 1298, alt: 'Daily digest listing three to-dos due this week', caption: 'Daily digest of upcoming deadlines', phone: true }
+      { src: 'images/projects/automation-notifications.webp', light: 'images/projects/automation-notifications-light.webp', w: 600, h: 1298, alt: 'Notification list with daily digest, new to-do, finished task and job results', caption: 'Notifications by project and source', phone: true },
+      { src: 'images/projects/automation-digest.webp', light: 'images/projects/automation-digest-light.webp', w: 600, h: 1298, alt: 'Daily digest listing three to-dos due this week', caption: 'Daily digest of upcoming deadlines', phone: true }
     ],
     links: []
   },
@@ -282,7 +282,9 @@ function toggleDetail(wrapper) {
       data.shots.map(shot =>
         '<figure' + (shot.phone ? ' class="phone"' : '') + '>' +
         '<a href="' + shot.src + '" target="_blank" rel="noopener">' +
-        '<img src="' + shot.src + '" width="' + shot.w + '" height="' + shot.h + '" alt="' + shot.alt + '" loading="lazy" decoding="async"></a>' +
+        (shot.light ? '<picture><source srcset="' + shot.light + '" media="(prefers-color-scheme: light)">' : '') +
+        '<img' + (shot.lightUi ? ' class="light-ui"' : '') + ' src="' + shot.src + '" width="' + shot.w + '" height="' + shot.h + '" alt="' + shot.alt + '" loading="lazy" decoding="async">' +
+        (shot.light ? '</picture>' : '') + '</a>' +
         '<figcaption class="body-5">' + shot.caption + '</figcaption></figure>'
       ).join('') + '</div></div>'
     : '';
