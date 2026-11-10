@@ -70,9 +70,10 @@ const counterObserver = new IntersectionObserver((entries) => {
     counterObserver.unobserve(el);
     const target = parseFloat(el.dataset.target);
     const decimals = parseInt(el.dataset.decimals || (Number.isInteger(target) ? '0' : '1'), 10);
+    const prefix = el.dataset.prefix || '';
     const suffix = el.dataset.suffix || '';
     if (reduceMotion) {
-      el.textContent = formatNumber(target, decimals) + suffix;
+      el.textContent = prefix + formatNumber(target, decimals) + suffix;
       return;
     }
     const duration = 1200;
@@ -80,17 +81,14 @@ const counterObserver = new IntersectionObserver((entries) => {
     function tick(now) {
       const t = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - t, 3);
-      el.textContent = formatNumber(target * eased, decimals) + suffix;
+      el.textContent = prefix + formatNumber(target * eased, decimals) + suffix;
       if (t < 1) requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);
   });
 }, { threshold: 0.5 });
 
-document.querySelectorAll('.proof-number').forEach(el => {
-  el.dataset.suffix = el.dataset.target === '2.5' ? '+' : '';
-  counterObserver.observe(el);
-});
+document.querySelectorAll('.proof-number').forEach(el => counterObserver.observe(el));
 
 // Tagline: words light up one at a time as they cross the trigger line
 (function () {
