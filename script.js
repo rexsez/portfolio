@@ -131,15 +131,16 @@ document.querySelectorAll('.proof-number').forEach(el => {
 // Project data
 const projectData = {
   1: {
-    desc: 'Developed a full payment and money transfer module on OutSystems for a government auctions platform. The system integrates with external banking APIs to handle real time transaction processing, automated invoice generation and payment reconciliation across multiple banking providers.',
+    desc: 'Built the payment system of a high value online auctions platform on OutSystems. It replaced bank cheques with online payments through a national electronic payment system. Bidders pay their entry fee online and are cleared to bid. When an auction closes, the platform sends the result to the payment API: entry fees are refunded automatically to bidders who did not win, the winner\'s remaining amount is issued for online payment, and the proceeds are transferred to the seller\'s bank through a B2B integration. Over $10 billion has been processed through this payment flow since launch.',
     highlights: [
-      'Integrated external banking APIs for real time transaction processing',
-      'Built automated invoice generation and payment tracking workflows',
-      'Implemented secure API authentication flows with token management',
-      'Handled multi provider payment routing with error recovery',
-      'Designed for high availability with transaction rollback support'
+      'Replaced bank cheque payments with online payments through a national electronic payment system',
+      'Bidders pay their entry fee online and are cleared to bid',
+      'Entry fees are refunded automatically to bidders who did not win',
+      'The winner\'s remaining amount is issued for online payment when the auction closes',
+      'Proceeds are settled to the seller\'s bank through a B2B integration',
+      'Over $10 billion processed through the payment flow since launch'
     ],
-    tags: ['OutSystems', 'REST APIs', 'Banking', 'Enterprise', 'Payment Processing'],
+    tags: ['OutSystems', 'REST APIs', 'Payment integration', 'B2B settlement', 'Enterprise'],
     note: 'Mostly backend work inside the client\'s system, so there are no screenshots to share. The image on the card is an illustration of the payment flow.',
     links: []
   },
