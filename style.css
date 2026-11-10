@@ -388,32 +388,6 @@ p, li { text-wrap: pretty; }
   max-width: 680px;
 }
 
-.status-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--s-75);
-  padding: var(--s-50) var(--s-100);
-  margin-bottom: var(--s-300);
-  background: var(--surface);
-  border: 1px solid var(--surface-3);
-  border-radius: 9999px;
-  color: var(--text-muted);
-}
-
-.status-chip::before {
-  content: '';
-  width: var(--s-75);
-  height: var(--s-75);
-  border-radius: 50%;
-  background: var(--accent);
-  animation: pulse 2s var(--ease) infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
-
 .hero-name {
   margin-bottom: var(--s-200);
   background: linear-gradient(90deg, var(--name-from) 0%, var(--name-to) 100%);
@@ -1144,7 +1118,6 @@ p, li { text-wrap: pretty; }
     transform: none;
   }
 
-  .status-chip::before { animation: none; }
   .tagline-text .word { transition: none; }
 }
 
